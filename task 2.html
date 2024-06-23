@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+            align-items: stretch;
+        }
+
+        .flex>a {
+            background-color: black;
+            color: whitesmoke;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 40px;
+            text-decoration: none;
+            font-family: cursive;
+            flex-grow: 1;
+        }
+
+        .flex>a.about {
+            flex-grow: 8;
+        }
+
+        .flex>a.contact {
+            flex-grow: 16;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex">
+        <a href="#">Home</a>
+        <a href="#" class="about">About</a>
+        <a href="#" class="contact">Contact</a>
+    </div>
+
+</body>
+
+</html>
